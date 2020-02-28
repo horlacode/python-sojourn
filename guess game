@@ -1,0 +1,54 @@
+# python-sojourn
+
+
+import random
+random1 = random.randrange(1,5)
+random2 = random.randrange(1,10)
+random3 = random.randrange(1,20)
+player = int(input('enter level'))
+
+if player == 1:
+    print("you selected level 1, guess any number from 1 to 5")
+    import random
+    random1 = random.randrange(1,5)
+    answer = int(input("enter your guess from 1 to 5: "))
+    
+    if answer == random1:
+        print("you won")
+    else:
+        while answer != random1:
+            print(f"the random number is {random1}  against your own guess of  {answer}")
+            answer = int(input("enter your guess from 1 to 5: "))
+            
+
+            
+if player == 2:
+    print("you selected level 2, guess any number from 1 to 10")
+    import random
+    random2 = random.randrange(1,10)
+    answer = int(input("enter your guess from 1 to 10: "))
+    
+    if answer == random2:
+        print("you won")
+    else:
+        while answer != random2:
+            print("try again")
+            answer = int(input("enter your guess from 1 to 10: "))
+            
+            
+            
+            
+if player == 3:
+    print("you selected level 3, guess any number from 1 to 20")
+    import random
+    random2 = random.randrange(1,20)
+    answer = int(input("enter your guess from 1 to 20: "))
+    
+    if answer == random3:
+        print("you won")
+    else:
+        while answer != random3:
+            print("try again")
+            answer = int(input("enter your guess from 1 to 20: "))
+            
+            
